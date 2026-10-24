@@ -17,7 +17,7 @@
 <body>
 
 <h1>Lazy Ninja — Privacy Policy</h1>
-<p class="meta">App: <b>Lazy Ninja</b> (com.lazyninja.app) · Developer contact: <b>lazy.ninja.support@proton.me</b> · Last updated: 23 October 2026</p>
+<p class="meta">App: <b>Lazy Ninja</b> (com.lazyninja.app) · Developer contact: <b>lazy.ninja.support@proton.me</b> · Last updated: 24 October 2026</p>
 
 <p>Lazy Ninja is a fitness game for children, designed to work <b>without accounts and without collecting personal information</b>. This page explains exactly what data the app handles, where it goes, and what stays on your device. The short version: everything lives on your phone unless a parent explicitly turns on a feature that needs the network.</p>
 
@@ -31,7 +31,7 @@
 <p>A parent may connect the app to <b>their own Dropbox account</b> to back up progress. The backup contains the profile data listed above plus, for profiles that use the friends feature, the friends data described in 2b. It is written to an app-specific folder in the parent's Dropbox that only Lazy Ninja can access. The Dropbox sign-in uses OAuth (we never see the password); the access token is stored on-device encrypted with hardware-backed keys. Signing out deletes the token. Dropbox's own privacy policy applies to data stored in Dropbox.</p>
 
 <h2>2b. Friend codes (parent's choice, per child)</h2>
-<p>A parent may enable the friends feature for a specific ninja. When enabled, the app creates a <b>random identifier</b> (not derived from the device or any personal data) and sends the following to our server so linked friends can see each other's standing: the ninja's nickname, chosen cartoon face, weekly XP, lifetime XP, streak days and badge count. Linking requires a 6-character code exchanged between parents; codes expire in 48 hours. There is <b>no chat, no photos, no location, no contact lists, and no free-form content</b> other than the nickname the parent approved. Removing a friend deletes the link in both directions. Our server runs on Google Cloud (europe-west region) and stores this data in Google Firestore.</p>
+<p>A parent may enable the friends feature for a specific ninja. When enabled, the app creates a <b>random identifier</b> (not derived from the device or any personal data) and sends the following to our server so linked friends can see each other's standing: the ninja's first name (the profile name as entered by the family), chosen cartoon face, weekly XP, lifetime XP, streak days and badge count. Linking requires an 8-character code exchanged between parents; codes expire in 48 hours, and repeated wrong codes are blocked so codes cannot be guessed. There is <b>no chat, no photos, no location, no contact lists, and no free-form content</b> other than the first name the parent approved. Removing a friend deletes the link in both directions. <b>Retention:</b> a ninja's friends data is deleted automatically after 90 days without use, and unused codes are deleted when they expire. Our server runs on Google Cloud (europe-west region) and stores this data in Google Firestore.</p>
 
 <h2>2c. Premium purchase</h2>
 <p>Premium is a one-time purchase processed entirely by Google Play. To activate it, our server verifies the purchase with Google using the pseudonymous purchase token Google issues. We never see names, e-mail addresses or payment details.</p>
@@ -46,17 +46,17 @@
 <tr><th>Data</th><th>Where</th><th>When</th></tr>
 <tr><td>Profiles, XP, history, rewards, settings</td><td>Device only</td><td>Always</td></tr>
 <tr><td>Backup snapshot (same data)</td><td>Parent's own Dropbox</td><td>Only if the parent connects Dropbox</td></tr>
-<tr><td>Nickname, avatar choice, exercise stats, random ID</td><td>Our server (Google Cloud, EU)</td><td>Only if the parent enables friends for that child</td></tr>
+<tr><td>First name, avatar choice, exercise stats, random ID (deleted after 90 days without use)</td><td>Our server (Google Cloud, EU)</td><td>Only if the parent enables friends for that child</td></tr>
 <tr><td>Play purchase token</td><td>Our server (Google Cloud, EU)</td><td>Only when Premium is bought</td></tr>
 <tr><td>Video stream request (privacy-enhanced mode)</td><td>YouTube (Google)</td><td>Only when a child plays a video a parent added</td></tr>
 <tr><td>Video ID only ("Made for Kids" check)</td><td>Our server (Google Cloud, EU), which asks YouTube</td><td>When a parent adds a video, and at least every 30 days</td></tr>
 </table>
 
 <h2>4. Children's privacy</h2>
-<p>Lazy Ninja is designed for children used together with their parents. We do not require or request any personal information from children. We do not knowingly collect personal information beyond the parent-entered nickname described above, we show no ads, and every network feature is parent-gated. If you believe a child has provided personal data through the app, contact us and we will delete it.</p>
+<p>Lazy Ninja is designed for children used together with their parents. We do not require or request any personal information from children. We do not knowingly collect personal information beyond the parent-entered first name described above, we show no ads, and every network feature is parent-gated. If you believe a child has provided personal data through the app, contact us and we will delete it.</p>
 
 <h2>5. Data deletion</h2>
-<p>On-device data: uninstalling the app, deleting a profile, or clearing app data removes it. Dropbox backup: delete the app folder in your Dropbox or disconnect the app at dropbox.com. Friends data: removing a friend unlinks both sides; disabling the friends feature stops all sending; to have a ninja's server record deleted entirely, e-mail us the friend code or nickname and approximate linking date at <b>lazy.ninja.support@proton.me</b> and we will remove it.</p>
+<p>On-device data: uninstalling the app, deleting a profile, or clearing app data removes it. Dropbox backup: delete the app folder in your Dropbox or disconnect the app at dropbox.com. Friends data: removing a friend unlinks both sides; turning the friends feature off for a ninja, or deleting the ninja, deletes that ninja's server record (name, face, stats, every friend link and any unused code) straight away, or as soon as the device is next online; anything left unused is deleted automatically after 90 days. If you no longer have the device, e-mail us the ninja's first name and approximate linking date at <b>lazy.ninja.support@proton.me</b> and we will remove it.</p>
 
 <h2>6. Changes</h2>
 <p>If this policy changes, the new version will be published at this address with an updated date above.</p>
@@ -64,7 +64,7 @@
 <!-- ===================== PT ===================== -->
 <div class="pt"></div>
 <h1>Lazy Ninja — Política de Privacidade (Português)</h1>
-<p class="meta">App: <b>Lazy Ninja</b> (com.lazyninja.app) · Contacto: <b>lazy.ninja.support@proton.me</b> · Última atualização: 23 de outubro de 2026</p>
+<p class="meta">App: <b>Lazy Ninja</b> (com.lazyninja.app) · Contacto: <b>lazy.ninja.support@proton.me</b> · Última atualização: 24 de outubro de 2026</p>
 
 <p>O Lazy Ninja é um jogo de exercício para crianças, concebido para funcionar <b>sem contas e sem recolher informação pessoal</b>. Em resumo: tudo fica no telemóvel, a menos que um adulto ative explicitamente uma funcionalidade que precise de rede.</p>
 
@@ -73,7 +73,7 @@
 
 <h2>2. Funcionalidades opcionais com rede</h2>
 <p><b>Cópia de segurança na Dropbox:</b> um adulto pode ligar a app à sua própria conta Dropbox. A cópia vai para uma pasta exclusiva da app; a palavra-passe nunca passa pela app e o token fica cifrado no dispositivo. Sair apaga o token.</p>
-<p><b>Códigos de amigo:</b> quando um adulto ativa a funcionalidade para um ninja, a app cria um <b>identificador aleatório</b> e envia ao nosso servidor: alcunha, cara escolhida, XP semanal, XP total, dias de sequência e número de medalhas. A ligação faz-se por um código de 6 carateres trocado entre pais, válido 48 horas. <b>Não há conversas, fotos, localização nem contactos.</b> Remover um amigo apaga a ligação nos dois sentidos. O servidor corre na Google Cloud (região europeia), com dados no Google Firestore.</p>
+<p><b>Códigos de amigo:</b> quando um adulto ativa a funcionalidade para um ninja, a app cria um <b>identificador aleatório</b> e envia ao nosso servidor: primeiro nome (o nome do perfil escrito pela família), cara escolhida, XP semanal, XP total, dias de sequência e número de medalhas. A ligação faz-se por um código de 8 carateres trocado entre pais, válido 48 horas; tentativas erradas repetidas são bloqueadas, para que os códigos não possam ser adivinhados. <b>Não há conversas, fotos, localização nem contactos.</b> Remover um amigo apaga a ligação nos dois sentidos. <b>Conservação:</b> os dados de amigos de um ninja são apagados automaticamente após 90 dias sem uso, e os códigos não usados são apagados quando expiram. O servidor corre na Google Cloud (região europeia), com dados no Google Firestore.</p>
 <p><b>Compra Premium:</b> processada inteiramente pela Google Play; o nosso servidor verifica apenas o token pseudónimo da compra. Nunca vemos nomes, e-mails ou dados de pagamento.</p>
 <p><b>Vídeos adicionados pelos pais:</b> os pais podem adicionar ligações para vídeos do YouTube. A reprodução é feita dentro da app, no modo de privacidade melhorada do YouTube (youtube-nocookie.com), e a app não deixa o YouTube guardar cookies de terceiros no leitor. Mesmo assim, o YouTube (Google) recebe o pedido necessário para transmitir o vídeo, como num navegador, e aplica-se a política de privacidade da Google a essa reprodução. A app nunca adiciona vídeos sozinha e as crianças não podem navegar em plataformas de vídeo dentro da app.</p>
 <p><b>Verificação "Feito para crianças":</b> quando um adulto adiciona um vídeo, e de novo pelo menos a cada 30 dias, o nosso servidor pergunta ao YouTube se o vídeo está marcado como "Feito para crianças". Só é enviado o identificador do vídeo: nada sobre a criança, o adulto ou o dispositivo. A resposta fica guardada apenas no dispositivo (não entra na cópia de segurança da Dropbox) e serve para avisar o adulto e pedir uma confirmação extra antes de um vídeo não marcado como "Feito para crianças" poder ser mostrado.</p>
@@ -83,7 +83,7 @@
 <p>Não pedimos informação pessoal às crianças, não mostramos anúncios e todas as funcionalidades de rede estão atrás do portão parental. Se acredita que uma criança forneceu dados pessoais através da app, contacte-nos e apagamo-los.</p>
 
 <h2>4. Eliminação de dados</h2>
-<p>Dados no dispositivo: desinstalar a app, apagar um perfil ou limpar os dados remove-os. Dropbox: apague a pasta da app ou desligue-a em dropbox.com. Dados de amigos: remover um amigo desliga os dois lados; para apagar totalmente o registo de um ninja no servidor, escreva para <b>lazy.ninja.support@proton.me</b>.</p>
+<p>Dados no dispositivo: desinstalar a app, apagar um perfil ou limpar os dados remove-os. Dropbox: apague a pasta da app ou desligue-a em dropbox.com. Dados de amigos: remover um amigo desliga os dois lados; desativar os amigos de um ninja, ou apagar o ninja, apaga de imediato o seu registo no servidor (nome, cara, estatísticas, todas as ligações e códigos por usar), ou assim que o dispositivo voltar a estar online; o que ficar sem uso é apagado automaticamente após 90 dias. Se já não tiver o dispositivo, escreva para <b>lazy.ninja.support@proton.me</b>.</p>
 
 </body>
 </html>
